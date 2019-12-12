@@ -20,14 +20,35 @@ export default function Form(props) {
 
 	return (
 		<form onSubmit={submitForm}>
-			<label htmlFor='name'>Name</label>
-			<input id='name' type='text' name='name' onChange={handleChanges} value={member.name} />
+			<label htmlFor='name'>Name: </label>
+			<input
+				id='name'
+				placeholder='First and Last Name'
+				type='text'
+				name='name'
+				onChange={handleChanges}
+				value={member.name}
+			/>
 
-			<label htmlFor='email'>Email</label>
-			<input id='email' type='text' name='email' onChange={handleChanges} value={member.email} />
+			<label htmlFor='email'>Email: </label>
+			<input
+				id='email'
+				placeholder='Email Address'
+				type='text'
+				name='email'
+				onChange={handleChanges}
+				value={member.email}
+			/>
 
-			<label htmlFor='role'>Role</label>
-			<input id='role' type='text' name='role' onChange={handleChanges} value={member.role} />
+			<label htmlFor='role'>Role: </label>
+			<input
+				id='role'
+				placeholder='Role at Lambda'
+				type='text'
+				name='role'
+				onChange={handleChanges}
+				value={member.role}
+			/>
 
 			<button type='submit'>Add Team Member</button>
 		</form>
